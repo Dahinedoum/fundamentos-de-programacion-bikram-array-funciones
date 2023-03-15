@@ -35,27 +35,18 @@ function potenciacion(N1, N2){
 // La variable resultado se inicia en 1 para que la multiplicación funcione 
 
 
-//[ ] 7. Créez la fonction **separarPalabras** qui accepte **un string** comme 
-//argument et renvoie **un array de mots 'hola mundo' => [hola, mundo]**
 
-// function separarPalabras(string){
-//     // let palabra = [];
-//     // let palabra2 = "";
-//     // for (let i = 0; i < string.length; i++) {
+// [ ] 7.- [ ] 7.- Créez la fonction **separarPalabras** qui accepte 
+//**une chaîne** comme argument et renvoie **un tableau de mots 
+// 'hello world' => [hello, world]**
+
+function separarPalabras(string){
         
-//     //     if(string[i] === " "){
-//     //         palabra2 += ","
-//     //     }
-//     //     palabra2 += string[i]
-//     // }
+    return string.split (" ")
+    }
 
-//     // return [palabra2]
+separarPalabras("Hola Mundo")
 
-
-//     console.log (string.split(","))
-// }
-
-// separarPalabras("Hola Mundo")
 
 
 //[ ] 8.
@@ -67,19 +58,33 @@ function repetirString(String, Numero){
 
         concatenar += String
     }
-
+    
     console.log(concatenar)
-    return concatenar
+    return concatenar;
 }
 
-repetirString("ja")
+repetirString("ja", 6)
 
-//[ ] 9.
+
+//----------------------------
+//exemple:
+// let num = 5
+// let str = ""
+// const char = "*"
+
+// for (let i=0; i < num; i++){
+
+//     str += char  //concatenar (str = str + char)
+// }
+// console.log(str)
+
+
+// //[ ] 9.
 
 function esPrimo(n){
     if (n<=1) return false;
     for (let i = 2; i <= Math.sqrt(n); i++)
-        if (n % i == 0) return false;
+        if (n % i === 0) return false;
     return true;
 }
 
